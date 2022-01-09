@@ -1,29 +1,29 @@
 # 2장 알아두어야 할 자바스크립트
 
 ## ES2015+
-* const, let
+* const, let     
 var을 대체하여 사용     
 
-* 템플릿 문자열
+* 템플릿 문자열     
 백틱(`)으로 감쌈     
 문자열 안에 변수를 넣을 수 있음     
 
-* 객체 리터럴
+* 객체 리터럴     
 객체의 메서드에 함수를 연결할 떄 콜른(:)과 function을 붙이지 않아도 됨     
 속성명과 변수명이 동일한 경우에는 한 번만 써도 됨(코드의 중복을 피할 수 있어 편리)     
 
-* 화살표 함수
+* 화살표 함수     
 기존의 function() {}도 사용가능     
 function 대신 => 기호로 함수를 선언, 변수에 대입하면 나중에 재사용 가능     
 화살표 함수 내부에 return문밖에 없는 경우 retur문을 줄일 수 있음
 
-* 구조분해 할당
+* 구조분해 할당     
 객체와 배열로부터 속서이나 요소를 쉽게 꺼낼 수 있음     
 
-* 클래스
+* 클래스     
 프로토타입 기반 분법을 보기 좋게 클래스로 바꾼 것
 
-* 프로미스
+* 프로미스     
 자바스크립트와 노드의 API들이 콜백 대신 프로미스기반으로 재구성되며, 악명 높은 콜백 지옥 현상을 극복     
 실행은 바로 하되 결과값은 나중에 받는 객체
 ```
@@ -48,7 +48,7 @@ promise
     })
 ```
 
-* async/await
+* async/await     
 비동기 위주로 프로그래밍을 해야 할 때 도움이 많이 됨     
 ```
 프로미스 코드
@@ -107,14 +107,14 @@ const promise2 = Promise.resolve('성공2');
 ```
 
 ## 프런트엔드 자바스크립트
-* AJAX(Asynchronous Javascript And XML)
+* AJAX(Asynchronous Javascript And XML)     
 비동기적 웹 서비스를 개발할 때 사용하는 기법     
 페이지 이동 없이 서버에 요청을 보내고 응답을 받는 기술     
 
-* FormData
+* FormData     
 주로 AJAX와 함께 사용되며, HTML form 태그의 데이터를 동적으로 제어할 수 있는 기능
 
-* encodeURIComponent, decodeURIComponent
+* encodeURIComponent, decodeURIComponent     
 한글을 처리하기 위한 것     
 서버 종류에 따라 다르지만 서버가 한글 주소를 이해하지 못하는 경우 한글 주소 부분만 encodeURIComponent 메서드로 감쌈
 ```
@@ -135,7 +135,7 @@ const promise2 = Promise.resolve('성공2');
 decodeURIComponent(%EB%85%B8%EB%93%9C); // 노드
 ```
 
-* 데이터 속성과 dataset
+* 데이터 속성과 dataset     
 프런트엔드에 데이터를 내려보낼 때 첫 번째로 고려해야 할 점은 보안(비밀번호 같은 건 절대 내려보내면 안됨)     
 HTML 태그의 속성으로 data-로 시작하는 것들을 넣음     
 화면에는 나타나지는 않지만 이 데이터들을 사용해 서버에 요청을 보내게 됨     
@@ -156,15 +156,15 @@ HTML 태그의 속성으로 data-로 시작하는 것들을 넣음
 ```
 
 ## 함께보면 좋은 자료
-[ES2015 설명](https://developer.mozilla.org/ko/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla)
-[ES 상세 후보군](https://github.com/tc39/proposals)
-[ES2015+ 브라우저/서버 호환 여부](http://kangax.github.io/compat-table/es6/)
-[브라우저별 기능 지원 여부 확인](https://caniuse.com/)
-[노드 버전별 ECMAScript 스펙](http://node.green)
-[AJAX 설명](https://developer.mozilla.org/ko/docs/Web/Guide/AJAX)
-[axios](https://github.com/axios/axios)
-[FormData 설명](https://developer.mozilla.org/ko/docs/Web/API/FormData)
-[ESLint 툴](https://eslint.org/)
-[에어비앤비 코딩 스타일](https://github.com/airbnb/javascript)
-[저자의 블로그 ES2015+](https://zerocho.com/category/EcmaScript)
-[모던 자바스크립트 튜토리얼](https://ko.javascript.info/)
+[ES2015 설명](https://developer.mozilla.org/ko/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla)     
+[ES 상세 후보군](https://github.com/tc39/proposals)     
+[ES2015+ 브라우저/서버 호환 여부](http://kangax.github.io/compat-table/es6/)     
+[브라우저별 기능 지원 여부 확인](https://caniuse.com/)     
+[노드 버전별 ECMAScript 스펙](http://node.green)     
+[AJAX 설명](https://developer.mozilla.org/ko/docs/Web/Guide/AJAX)     
+[axios](https://github.com/axios/axios)     
+[FormData 설명](https://developer.mozilla.org/ko/docs/Web/API/FormData)     
+[ESLint 툴](https://eslint.org/)     
+[에어비앤비 코딩 스타일](https://github.com/airbnb/javascript)     
+[저자의 블로그 ES2015+](https://zerocho.com/category/EcmaScript)     
+[모던 자바스크립트 튜토리얼](https://ko.javascript.info/)     
